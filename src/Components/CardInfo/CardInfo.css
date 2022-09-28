@@ -1,0 +1,12 @@
+.card-profile{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.inbio{
+     background-color: aqua;
+     border-radius: 15px;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+}

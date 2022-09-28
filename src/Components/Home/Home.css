@@ -1,0 +1,9 @@
+.cards-container{
+     display: grid;
+     grid-template-columns: 4fr 1fr;
+}  
+.card_profile{
+    padding: 0px 20px;
+    background-color: #fff;
+    box-shadow: 3px 7px 20px gray;
+}

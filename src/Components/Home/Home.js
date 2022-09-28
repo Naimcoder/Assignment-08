@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import CardInfo from '../CardInfo/CardInfo';
 import Cards from '../Cards/Cards';
+import './Home.css';
 
-import './Home.css'
 const Home = () => {
 
      const [card, setCard] = useState([])
@@ -12,13 +13,13 @@ const Home = () => {
      },[])
 
      return (
-          <div className='card-container'>
+          <div className='cards-container'>
                <div className="cards_items">
                     <Cards card={card}></Cards>
                </div>
                
                <div className="card_profile">
-                    <h2>this card profile</h2>
+                   <CardInfo></CardInfo>
               </div>
           </div>
      );
