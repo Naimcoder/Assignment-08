@@ -1,0 +1,44 @@
+[
+  {
+    "id": "63345d1a39a547c73672e05f",
+    "title":"Cycling",
+    "age": "20-25",
+    "time":30,
+    "image":"./images/cyclicng.jpg"
+  },
+  {
+    "id": "63345d1a9ce69c687d763e7c",
+    "title": "Karate",
+    "age": "20-25",
+    "time": 60,
+     "image":"./images/karate.jpg"
+  },
+  {
+    "id": "63345d1ab3a17cd26280ad0e",
+    "title": "Power",
+    "age": "20-25",
+    "time": 40,
+     "image":"./images/power.jpg"
+  },
+  {
+    "id": "63345d1af30ac6e6e9e686f2",
+    "title": "Meditation",
+    "age": "20-25",
+    "time": 50,
+    "image": "./images/meditatioin.jpg"
+  },
+  {
+    "id": "63345d1a7811283b9b43e12f",
+    "title": "Martial Arts",
+    "age": "20-25",
+    "time": 60,
+    "image": "./images/martial arts.jpg"
+  },
+  {
+    "id": "63345d1a5046fd8442af2def",
+    "title": "Crossifit",
+    "age": "20-25",
+    "time": 45,
+     "image":"./images/crossfit.jpg"
+  }
+]
