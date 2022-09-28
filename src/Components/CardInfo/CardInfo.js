@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './CardInfo.css'
+import './CardInfo.css';
   import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
@@ -15,7 +15,6 @@ const CardInfo = ({times,setTime}) => {
                localStorage.setItem('brakeTime', items)
                 setBktime(items)
           }
-          
      }
     
 
