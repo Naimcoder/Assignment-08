@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './CardInfo.css'
-import Swal from 'sweetalert2'
-// import { ToastContainer, toast } from 'react-toastify';
+  import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const CardInfo = ({times,setTime}) => {
      const [Bktime, setBktime] = useState(0);
@@ -18,16 +18,8 @@ const CardInfo = ({times,setTime}) => {
           
      }
     
-   
-   
 
-     const sweetAlaert = () => {
-     Swal.fire(
-  'Good job!',
-  'You clicked the button!',
-  'success'
-)
-     }
+const notify = () => toast("Wow so easy!");
     
      return (
           <div>
@@ -86,7 +78,8 @@ const CardInfo = ({times,setTime}) => {
                      <h4>{Bktime?Bktime:oldBreakTime?oldBreakTime:0} seconds</h4> 
                  </div>
                </div>
-               <button  className='card-btn'>Activity Completed</button>
+               <button onClick={notify} className='card-btn'>Activity Completed</button>
+               <ToastContainer></ToastContainer>
           </div>
      );
 };
