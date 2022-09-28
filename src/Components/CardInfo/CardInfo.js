@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
 import './CardInfo.css'
+import Swal from 'sweetalert2'
+
 const CardInfo = ({times,setTime}) => {
      const [Bktime, setBktime] = useState(0);
      
      const handlerAddToTime = (items) => {
           setBktime(items)
+     }
+     const sweetAlaert = () => {
+     Swal.fire(
+  'Good job!',
+  'You clicked the button!',
+  'success'
+)
      }
      return (
           <div>
@@ -63,7 +72,7 @@ const CardInfo = ({times,setTime}) => {
                      <h4>{Bktime} seconds</h4> 
                  </div>
                </div>
-               <button className='card-btn'>Activity Completed</button>
+               <button onClick={sweetAlaert} className='card-btn'>Activity Completed</button>
           </div>
      );
 };
