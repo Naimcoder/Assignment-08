@@ -1,13 +1,26 @@
 import React, { useState } from 'react';
 import './CardInfo.css'
 import Swal from 'sweetalert2'
+// import { ToastContainer, toast } from 'react-toastify';
 
 const CardInfo = ({times,setTime}) => {
      const [Bktime, setBktime] = useState(0);
-     
+     const prveBreakTime = localStorage.getItem("brakeTime")
+     const oldBreakTime = JSON.parse(prveBreakTime)
      const handlerAddToTime = (items) => {
-          setBktime(items)
+          if (oldBreakTime) {
+               setBktime(items)
+               localStorage.setItem('brakeTime',items)
+          } else {
+               localStorage.setItem('brakeTime', items)
+                setBktime(items)
+          }
+          
      }
+    
+   
+   
+
      const sweetAlaert = () => {
      Swal.fire(
   'Good job!',
@@ -15,6 +28,7 @@ const CardInfo = ({times,setTime}) => {
   'success'
 )
      }
+    
      return (
           <div>
                <div className='card-profile'>
@@ -69,10 +83,10 @@ const CardInfo = ({times,setTime}) => {
                  </div>
                 <div className='times'>
                     <h3> Break time</h3> 
-                     <h4>{Bktime} seconds</h4> 
+                     <h4>{Bktime?Bktime:oldBreakTime?oldBreakTime:0} seconds</h4> 
                  </div>
                </div>
-               <button onClick={sweetAlaert} className='card-btn'>Activity Completed</button>
+               <button  className='card-btn'>Activity Completed</button>
           </div>
      );
 };

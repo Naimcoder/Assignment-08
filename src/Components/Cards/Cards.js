@@ -14,7 +14,7 @@ const Cards = ({ card,times,setTime }) => {
                 <h3 className='title-head'>Select today’s exercise Gym..</h3>
                <div className='card-container'>
                {
-                    card.map(Cd => <SingleCard SingleCard={Cd} times={times} setTime={setTime}></SingleCard>)        
+                         card.map(Cd => <SingleCard SingleCard={Cd} key={Cd.id} times={times} setTime={setTime}></SingleCard>)        
                }
             </div>
           </div>
