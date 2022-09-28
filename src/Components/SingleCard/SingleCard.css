@@ -1,7 +1,7 @@
 .card {
   width: 350px;
   margin-top: 50px;
-  height: 580px;
+
   box-shadow: 2px 2px 4px gray;
   border-radius: 25px 25px 0px 0px;
 }
@@ -9,4 +9,28 @@
 width: 350px;
 height: 300px;
 border-radius: 25px 25px 0px 0px;
+}
+.card-info{
+     padding: 20px;
+     line-height: 22px;
+     font-size: 18px;
+}
+.card-info p{
+color: gray;
+}
+.card-info h4{
+     margin: 0;
+     margin-top: 8px;
+     font-size: 20px;
+}
+.Card-btn{
+     width: 100%;
+     margin-top:30px;
+     padding: 10px 20px;
+     background-color: blueviolet;
+     border: none;
+     color: #fff;
+     font-size: 18px;
+     font-weight: 500;
+     text-transform: uppercase;
 }
