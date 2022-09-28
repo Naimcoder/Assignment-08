@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SingleCard from '../SingleCard/SingleCard';
 import "./Cards.css"
 
-const Cards = ({card}) => {
+const Cards = ({ card,times,setTime }) => {
+         
+  
+
      return (
           <div>
                <div style={{color:'blue',margin:"10px 20px"}}>
@@ -11,9 +14,9 @@ const Cards = ({card}) => {
                 <h3 className='title-head'>Select today’s exercise Gym..</h3>
                <div className='card-container'>
                {
-                 card.map(Cd=><SingleCard SingleCard={Cd}></SingleCard>)        
+                    card.map(Cd => <SingleCard SingleCard={Cd} times={times} setTime={setTime}></SingleCard>)        
                }
-               </div>
+            </div>
           </div>
      );
 };

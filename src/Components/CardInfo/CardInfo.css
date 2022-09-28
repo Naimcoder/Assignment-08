@@ -4,9 +4,79 @@
      align-items: center;
 }
 .inbio{
+     margin: 25px 0px;
      background-color: aqua;
      border-radius: 15px;
      display: flex;
      justify-content: space-evenly;
      align-items: center;
+}
+.wigth h3,.height h3,.age h3{
+     font-size: 25px;
+     font-weight: 700;
+}
+small{
+     font-size: 16px;
+     color: cadetblue;
+}
+.wigth p,.height p,.age p{
+     font-size: 20px;
+     color: cadetblue;
+}
+.break{
+     margin-top: 50px;
+     padding: 0px 20px;
+     font-size: 25px;   
+}
+.break-time{
+     margin: 25px 0px;
+     background-color: rgb(248, 249, 250);
+     border-radius: 15px;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     padding: 20px;
+     margin-bottom: 40px;
+     box-sizing: 2px 4px 4px gray;
+}
+.items{
+     background-color: #ffff;
+     border-radius: 50px;
+     height: 30px;
+     width: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 10px;
+}
+.times{
+     background-color: rgb(248, 249, 250);
+     border-radius: 15px;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center; 
+     margin: 20px;
+     padding: 10px 0px;
+     box-shadow: 2px 2px 4px gainsboro;
+}
+.times h3{
+     font-size: 18px;
+     text-transform: uppercase;
+}
+.times h4{
+     font-size: 16px;
+     text-transform: capitalize;
+     color: cadetblue;
+}
+.card-btn{
+     width: 100%;
+     margin-top:60px;
+     padding: 15px 20px;
+     background-color: blueviolet;
+     border: none;
+     color: #fff;
+     font-size: 18px;
+     font-weight: 500;
+     text-transform: capitalize;
+     border-radius: 5px;
 }

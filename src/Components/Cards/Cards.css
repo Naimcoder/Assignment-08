@@ -1,6 +1,6 @@
 .card-container{
      display: grid;
-     grid-template-columns: repeat(3,2fr);
+     grid-template-columns: repeat(3,1fr);
      margin: 0px 120px;
 }
 .title-head{
@@ -9,3 +9,25 @@
      font-size: 28px;
      text-transform: capitalize;
 }
+@media only screen and (max-width:688px){
+     .card-container{
+          margin: 10px;
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+     }
+  
+}
+@media only screen and (min-width: 688px) and (max-width:992px){
+ .card-container{
+  grid-template-columns: repeat(2,1fr);
+   margin: 20px;
+}
+
+  
+}
+/* @media only screen and (min-width: 992px) and (max-width:1200px){
+html,body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+} */

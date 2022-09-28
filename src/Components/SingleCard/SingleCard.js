@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./SingleCard.css";
 
-const SingleCard = (props) => {
-     const {image,title,id,age,time}=props.SingleCard
-console.log(props)
+const SingleCard = ({SingleCard,times,setTime}) => {
+     const { image, title, id, age, time } = SingleCard
+ 
+     const addToCard = () => {
+          const info = parseInt(time)
+          if (times) {
+               const newtime = parseInt(times + info)
+               setTime(newtime)
+          }
+        console.log(info)
+     }
+     
      return (
           <div className='card'>
                <img src={image} alt="" />
@@ -14,7 +23,7 @@ console.log(props)
                    amet sint</p>
                     <h4>For Age :   {age}</h4>
                     <h4>Time required :   {time}<span><small>s</small></span></h4>
-                    <button className='Card-btn'>Add To Card</button>
+                    <button onClick={addToCard} className='Card-btn'>Add To Card</button>
                </div>
           </div>
      );

@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './CardInfo.css'
-const CardInfo = () => {
+const CardInfo = ({times,setTime}) => {
+     const [Bktime, setBktime] = useState(0);
+     
+     const handlerAddToTime = (items) => {
+          setBktime(items)
+     }
      return (
           <div>
                <div className='card-profile'>
@@ -29,6 +34,36 @@ const CardInfo = () => {
                     </div>
                
                </div>
+                  <h3 className='break'>Add A Break</h3>
+               <div className='break-time'>
+                    <div className='items'>
+                         <h3 onClick={() => handlerAddToTime(10)}>10s</h3>
+                    </div>
+                    <div className='items'>
+                         <h3 onClick={() => handlerAddToTime(20)}>20s</h3>
+                    </div>
+                    <div className='items'>
+                         <h3 onClick={() => handlerAddToTime(30)}>30s</h3>
+                    </div>
+                    <div className='items'>
+                         <h3 onClick={() => handlerAddToTime(40)}>40s</h3>
+                    </div>
+               </div>
+               <div>
+                    <h3 className='break'>
+                         Exercise Details
+                   </h3>
+               
+                <div className='times'>
+                    <h3> Exercise time</h3> 
+                     <h4>{times} seconds</h4> 
+                 </div>
+                <div className='times'>
+                    <h3> Break time</h3> 
+                     <h4>{Bktime} seconds</h4> 
+                 </div>
+               </div>
+               <button className='card-btn'>Activity Completed</button>
           </div>
      );
 };
