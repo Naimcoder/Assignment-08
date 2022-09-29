@@ -80,3 +80,11 @@ small{
      text-transform: capitalize;
      border-radius: 5px;
 }
+.card-img img{
+     width: 100px;
+     height: 100px;
+     margin-top: 8px;
+     margin-right: 10px;
+     border-radius: 50px;
+     border: 2px solid grey;
+}

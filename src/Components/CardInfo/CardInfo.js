@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './CardInfo.css';
+import images from  '../../profile.jpg'
   import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
@@ -24,7 +25,7 @@ const notify = () => toast("Wow so easy!");
           <div>
                <div className='card-profile'>
                     <div className='card-img'>
-                           <img src="" alt="" />
+                           <img src={images} alt="" />
                     </div>
                    
                     <div className='card-name'>
