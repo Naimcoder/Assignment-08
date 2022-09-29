@@ -1,3 +1,4 @@
+/* card info  part start */
 .card-profile{
      display: flex;
      justify-content: center;
@@ -88,3 +89,4 @@ small{
      border-radius: 50px;
      border: 2px solid grey;
 }
+/* card info  part End */

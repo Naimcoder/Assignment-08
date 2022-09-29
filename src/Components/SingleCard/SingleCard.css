@@ -1,3 +1,5 @@
+
+/* single card part :start */
 .card {
   width: 350px;
   margin-top: 50px;
@@ -34,3 +36,4 @@ color: gray;
      font-weight: 500;
      text-transform: uppercase;
 }
+/* single card part :start */

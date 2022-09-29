@@ -4,8 +4,6 @@ import "./Cards.css"
 
 const Cards = ({ card,times,setTime }) => {
          
-  
-
      return (
           <div>
                <div style={{color:'blue',margin:"10px 20px"}}>
